@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JHomes</title>
+  <link rel="stylesheet" href="fonts/ClashGrotesk/clash-grotesk.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <main>
+    <header id="site-header">
+      <div>
+        <span class="logo">
+          <object data="assets/icons/logo_light.svg" type="image/svg+xml"></object>
+        </span>
+      </div>
+      <div id="header_menu">
+        <div class="hamburger">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g id="menu">
+              <mask id="mask0_12_203" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect id="Bounding box" width="24" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_12_203)">
+              <path id="menu_2" d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#1C1B1F"/>
+              </g>
+              </g>
+              </svg>
+          </span>
+        </div>
+        <div>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div id="container">
+      <section id="intro">
+        <div>
+          <header>
+            <h1>Elevate Your Home <span>Decor</span> with Us!</h1>
+            <p>Where Your Imagination Meets Design Reality <br /> Explore Unique Pieces & Create Your Dream Home</p>
+          </header>
+          <div>
+            <button class="btn btn-primary">Find Your Style</button>
+            <div>
+              <div>
+                <span>
+                    <object data="assets/icons/lock.svg" type="image/svg+xml"></object>
+                </span>
+                <span>Fast & Secure Shopping</span>
+              </div>
+              <div>
+                <span>
+                    <object data="assets/icons/cart.svg" type="image/svg+xml"></object>
+                </span>
+                <span>Shop with Confidence</span>
+              </div>
+              <div>
+                <span>
+                    <object data="assets/icons/dollar.svg" type="image/svg+xml"></object>
+                </span>
+                <span>Quick & Safe Checkout</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/hero.png" alt="hero">
+        </div>
+      </section>
+      <section id="feature">
+        <div>
+          <header>
+            <h2>What’s New? <br />  Stay Ahead of the Curve with <br /> What's New</h2>
+            <p>Discover the latest additions to our catalog, from cutting-edge furniture to emerging design trends. Explore our curated collection of fresh arrivals, ensuring your space is always on the forefront of style and innovation.</p>
+          </header>
+          <div>
+            <button class="btn btn-secondary">Learn more</button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/image_and_links.png" alt="image and links">
+        </div>
+      </section>
+      <section id="about">
+        <div>
+          <header>
+            <h2>About Us</h2>
+            <p>We're dedicated to transforming houses into personalized homes. With years of expertise, we curate and craft exceptional home decorations to reflect your unique style and vision.</p>
+            <ul>
+              <li>Collaborate with our experts to revamp your space, from color palettes to furniture placement, reflecting your style.</li>
+              <li>Elevate your space with carefully selected artworks to inspire your decor.</li>
+              <li>We handle logistics, from delivery to professional installation, saving you time and effort.</li>
+            </ul>
+          </header>
+          <div>
+            <button class="btn btn-secondary">View Projects</button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/profile.png" alt="profile">
+        </div>
+      </section>
+    </div>
+    <footer id="site-footer">
+      <section>
+        <header>
+          <div>
+            <span class="logo">
+              <object data="assets/icons/logo_dark.svg" type="image/svg+xml"></object>
+            </span>
+          </div>
+        </header>
+        <div>
+          <p>Copyright &copy;Joygirl. Powered by JHomes</p>
+          <div class="socials">
+            <span>
+              <object data="assets/icons/facebook.svg" type="image/svg+xml"></object>
+            </span>
+            <span>
+              <object data="assets/icons/linkedin.svg" type="image/svg+xml"></object>
+            </span>
+            <span>
+              <object data="assets/icons/instagram.svg" type="image/svg+xml"></object>
+            </span>
+            <span>
+              <object data="assets/icons/telegram.svg" type="image/svg+xml"></object>
+            </span>
+            <span>
+              <object data="assets/icons/whatsapp.svg" type="image/svg+xml"></object>
+            </span>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </main>
+  <script>
+    const handleClick = () => {
+      console.log("clicked!!")
+      if (menu.getAttribute('open') != null) menu.removeAttribute('open')
+      else menu.setAttribute("open", '')
+
+    }
+    const menu = document.querySelector('#header_menu')
+    console.log(menu.querySelector('.hamburger'))
+    menu.querySelector('.hamburger').addEventListener("click", handleClick)
+  </script>
+</body>
+</html>
