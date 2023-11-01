@@ -1,3 +1,7 @@
+#container > section > * {
+  flex-basis: 100%;
+}
+
 #container > section > div:nth-child(2) {
   height: 100%;
   display: flex;

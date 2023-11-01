@@ -8,9 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/blog.css">
 </head>
 <body>
   <main>
@@ -47,71 +49,204 @@
       </div>
     </header>
     <div id="container">
-      <section id="intro">
+      <section id="intro" class="blog-hero">
         <div>
-          <header>
-            <h1>Elevate Your Home <span>Decor</span> with Us!</h1>
-            <p>Where Your Imagination Meets Design Reality <br /> Explore Unique Pieces & Create Your Dream Home</p>
+          <header data-aos="fade-in" data-aos-delay="200">
+            <h1>How to Decorate on a <br /> Tight Budget</h1>
           </header>
           <div>
-            <button class="btn btn-primary">Find Your Style</button>
-            <div>
+            <button class="btn btn-primary" data-aos="fade-right" data-aos-delay="1000">Find Your Style</button>
+          </div>
+        </div>
+      </section>
+      <section id="articles">
+        <header>
+          <h2>Featured Articles</h2>
+        </header>
+        <div>
+          <div class="tabs">
+            <span id="tab_all">all</span>
+            <span id="tab_recent">recent</span>
+            <span id="tab_previous">previous</span>
+          </div>
+          <div class="panels" data-aos="zoom-in" data-aos-once="false">
+            <div class="tab" id="panel_all">
               <div>
-                <span>
-                    <object data="assets/icons/lock.svg" type="image/svg+xml"></object>
-                </span>
-                <span>Fast & Secure Shopping</span>
+                <div class="cards">
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/five_home_decor.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/five_home_decor.jpeg" alt="Five Home Decor Trends to Look Out for in 2024" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                    <p>Sustainability is more important than ever before, and this trend is reflected in home decor. People are looking for ways to decorate their homes in a way.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/how_to_create.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/how_to_create.jpeg" alt="How to Create a Cozy and Inviting Living Room" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>How to Create a Cozy and Inviting Living Room</h3>
+                    <p>The living room is one of the most important rooms in the house. It's where we spend time with family and friends, relax and unwind, and entertain guests.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/esasy_ways_to.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/esasy_ways_to.jpeg" alt="Easy Ways to Update Your Home Decor on a Budget" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>Easy Ways to Update Your Home Decor on a Budget</h3>
+                    <p>If you're looking for ways to update your home decor on a budget, don't worry! There are plenty of things you can do without breaking the bank.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/how_to_choose.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/how_to_choose.jpeg" alt="How to Choose the Right Paint Colors for Your Home" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>How to Choose the Right Paint Colors for Your Home</h3>
+                    <p>Lighter colors can make a small space feel larger, while darker colors can make a large space feel more intimate.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/think_about_the.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/think_about_the.jpeg" alt="Think about the mood you want to create" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>Think about the mood you want to create</h3>
+                    <p>Different colors evoke different emotions. For example, red can be energizing, while blue can be calming.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/esasy_ways_to.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/esasy_ways_to.jpeg" alt="How to Decorate on a Tight Budget DIY Projects" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>How to Decorate on a Tight Budget DIY Projects</h3>
+                    <p>DIY projects are a great way to save money on home decor. There are plenty of easy DIY projects that you can do, even if you're not crafty.</p>
+                  </article>
+                </div>
               </div>
+            </div>
+            <div class="tab" id="panel_recent">
               <div>
-                <span>
-                    <object data="assets/icons/cart.svg" type="image/svg+xml"></object>
-                </span>
-                <span>Shop with Confidence</span>
+                <div class="cards">
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/how_to_choose.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/how_to_choose.jpeg" alt="How to Choose the Right Paint Colors for Your Home" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>How to Choose the Right Paint Colors for Your Home</h3>
+                    <p>Lighter colors can make a small space feel larger, while darker colors can make a large space feel more intimate.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/think_about_the.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/think_about_the.jpeg" alt="Think about the mood you want to create" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>Think about the mood you want to create</h3>
+                    <p>Different colors evoke different emotions. For example, red can be energizing, while blue can be calming.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/esasy_ways_to.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/esasy_ways_to.jpeg" alt="How to Decorate on a Tight Budget DIY Projects" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>How to Decorate on a Tight Budget DIY Projects</h3>
+                    <p>DIY projects are a great way to save money on home decor. There are plenty of easy DIY projects that you can do, even if you're not crafty.</p>
+                  </article>
+                </div>
               </div>
+            </div>
+            <div class="tab" id="panel_previous">
               <div>
-                <span>
-                    <object data="assets/icons/dollar.svg" type="image/svg+xml"></object>
-                </span>
-                <span>Quick & Safe Checkout</span>
+                <div class="cards">
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/five_home_decor.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/five_home_decor.jpeg" alt="Five Home Decor Trends to Look Out for in 2024" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                    <p>Sustainability is more important than ever before, and this trend is reflected in home decor. People are looking for ways to decorate their homes in a way.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/how_to_create.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/how_to_create.jpeg" alt="How to Create a Cozy and Inviting Living Room" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>How to Create a Cozy and Inviting Living Room</h3>
+                    <p>The living room is one of the most important rooms in the house. It's where we spend time with family and friends, relax and unwind, and entertain guests.</p>
+                  </article>
+                  <article class="card">
+                    <picture>
+                      <!-- <source src="./assets/images/esasy_ways_to.jpeg" > -->
+                      <img data-aos="fade-in" data-aos-delay="200" width="200" height="200" src="./assets/images/esasy_ways_to.jpeg" alt="Easy Ways to Update Your Home Decor on a Budget" loading="lazy">
+                    </picture>
+                    <time datetime="2023-10-27">27.10.23</time>
+                    <h3>Easy Ways to Update Your Home Decor on a Budget</h3>
+                    <p>If you're looking for ways to update your home decor on a budget, don't worry! There are plenty of things you can do without breaking the bank.</p>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <img src="./assets/images/hero.png" alt="hero">
-        </div>
       </section>
-      <section id="feature">
+      <section id="quotes" data-aos="flip-up" data-aos-duration="500"  data-aos-once="false" data-aos-anchor-placement="top-center">
         <div>
-          <header>
-            <h2>What’s New? <br />  Stay Ahead of the Curve with <br /> What's New</h2>
-            <p>Discover the latest additions to our catalog, from cutting-edge furniture to emerging design trends. Explore our curated collection of fresh arrivals, ensuring your space is always on the forefront of style and innovation.</p>
-          </header>
           <div>
-            <button class="btn btn-secondary">Learn more</button>
+            <blockquote>
+              <p>“A beautiful home is a reflection of the people who live in it.”</p>
+            </blockquote>
           </div>
         </div>
-        <div>
-          <img src="./assets/images/image_and_links.png" alt="image and links">
-        </div>
       </section>
-      <section id="about">
+      <section id="short-reads">
         <div>
-          <header>
-            <h2>About Us</h2>
-            <p>We're dedicated to transforming houses into personalized homes. With years of expertise, we curate and craft exceptional home decorations to reflect your unique style and vision.</p>
-            <ul>
-              <li>Collaborate with our experts to revamp your space, from color palettes to furniture placement, reflecting your style.</li>
-              <li>Elevate your space with carefully selected artworks to inspire your decor.</li>
-              <li>We handle logistics, from delivery to professional installation, saving you time and effort.</li>
-            </ul>
-          </header>
-          <div>
-            <button class="btn btn-secondary">View Projects</button>
-          </div>
+          <svg width="69" height="64" viewBox="0 0 69 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Group 10">
+            <path id="Ellipse 8" d="M36.5744 32.7111C36.5744 41.205 34.5509 48.8459 31.3314 54.3294C28.0982 59.8363 23.7767 63 19.204 63C14.6312 63 10.3097 59.8363 7.07653 54.3294C3.85707 48.8459 1.83362 41.205 1.83362 32.7111C1.83362 24.2173 3.85707 16.5763 7.07653 11.0928C10.3097 5.58594 14.6312 2.42224 19.204 2.42224C23.7767 2.42224 28.0982 5.58594 31.3314 11.0928C34.5509 16.5763 36.5744 24.2173 36.5744 32.7111Z" fill="white" stroke="black" stroke-width="2"/>
+            <path id="Ellipse 9" d="M67.8629 31.2889C67.8629 39.7827 65.8395 47.4237 62.62 52.9072C59.3868 58.4141 55.0653 61.5778 50.4926 61.5778C45.9198 61.5778 41.5983 58.4141 38.3651 52.9072C35.1456 47.4237 33.1222 39.7827 33.1222 31.2889C33.1222 22.795 35.1456 15.1541 38.3651 9.67061C41.5983 4.1637 45.9198 1 50.4926 1C55.0653 1 59.3868 4.1637 62.62 9.67061C65.8395 15.1541 67.8629 22.795 67.8629 31.2889Z" fill="white" stroke="black" stroke-width="2"/>
+            <ellipse id="Ellipse 10" cx="22.0484" cy="44.9422" rx="7.11111" ry="12.0889" fill="black"/>
+            <ellipse id="Ellipse 11" cx="53.3369" cy="44.9422" rx="7.11111" ry="12.0889" fill="black"/>
+            </g>
+          </svg>            
         </div>
-        <div>
-          <img src="./assets/images/profile.png" alt="profile">
+        <header>
+          <h2>Short Reads</h2>
+        </header>
+        <div class="cards">
+          <article class="card" data-aos="fade-up" data-aos-once="false">
+            <img src="assets/images/blog_article_1.jpeg" alt="">
+            <div data-aos="fade-up" data-aos-once="false" data-aos-delay="300">
+              <time datetime="2023-10-27">27.10.23</time>
+              <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+              <p>Sustainability is more important than ever before, and this trend is reflected in home decor. People are looking for ways to decorate their homes in a way.</p>
+            </div>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-once="false" data-aos-delay="100">
+            <img src="assets/images/blog_article_2.jpeg" alt="">
+            <div data-aos="fade-up" data-aos-once="false" data-aos-delay="400">
+              <time datetime="2023-10-27">27.10.23</time>
+              <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+              <p>Sustainability is more important than ever before, and this trend is reflected in home decor. People are looking for ways to decorate their homes in a way.</p>
+            </div>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-once="false" data-aos-delay="200">
+            <img src="assets/images/blog_article_3.jpeg" alt="">
+            <div data-aos="fade-up" data-aos-once="false" data-aos-delay="500">
+              <time datetime="2023-10-27">27.10.23</time>
+              <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+              <p>Sustainability is more important than ever before, and this trend is reflected in home decor. People are looking for ways to decorate their homes in a way.</p>
+            </div>
+          </article>
         </div>
       </section>
     </div>
@@ -147,6 +282,8 @@
       </section>
     </footer>
   </main>
-  <script src="scripts/main.js" />
+  <script src="scripts/imgpreload.js"></script>
+  <script src="scripts/blog.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

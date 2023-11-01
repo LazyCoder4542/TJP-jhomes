@@ -7,7 +7,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--clr-light-100);
-  color: var(--clr-dark-300)
+  color: var(--clr-dark-300);
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,9 +93,16 @@ p {
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  cursor: pointer;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
 }
-#site-header > div nav > a:hover {
-  text-decoration: underline;
+#site-header > div nav > a.active {
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-primary-200);
+}
+#site-header > div nav > a:not(.active):hover {
+  text-decoration-line: underline;
 }
 #site-header > div nav > a:nth-last-of-type(1) {
   color: var(--clr-primary-200);
@@ -107,9 +115,7 @@ p {
   justify-content: space-between;
   gap: 2.5rem;
 }
-#container > section > * {
-  flex-basis: 100%;
-}
+
 #container > section:not(section#intro) {
   padding-block: 4rem;
 }
@@ -218,6 +224,7 @@ p {
     box-shadow: 10px 10px 100px var(--clr-dark-100);
     transition: color 600ms 0 linear;
     text-align: center;
+    z-index: 99;
   }
   #site-header > #header_menu > div:nth-child(2) > nav {
     flex-direction: column;
